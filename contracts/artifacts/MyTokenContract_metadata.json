@@ -6,6 +6,25 @@
 	"output": {
 		"abi": [
 			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": false,
 				"inputs": [],
 				"name": "buyToken",
@@ -15,27 +34,9 @@
 				"type": "function"
 			},
 			{
-				"constant": true,
-				"inputs": [],
-				"name": "token",
-				"outputs": [
-					{
-						"name": "",
-						"type": "address"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"name": "_wallet",
-						"type": "address"
-					},
-					{
-						"name": "_token",
 						"type": "address"
 					}
 				],
@@ -47,6 +48,23 @@
 				"payable": true,
 				"stateMutability": "payable",
 				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Purchase",
+				"type": "event"
 			}
 		],
 		"devdoc": {
@@ -58,7 +76,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ERC20Token_ver1.sol": "MyContract"
+			"contracts/MyTokenContract.sol": "MyTokenContract"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -69,10 +87,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ERC20Token_ver1.sol": {
-			"keccak256": "0x65a59889dc6d89c95226b5cce5b289dd9c365203b431b79710abd7125204c1ca",
+		"contracts/MyTokenContract.sol": {
+			"keccak256": "0x155db84bf0165ee315f15b4d99dcda8bdd80a7af6946107cda838b2c7c949fef",
 			"urls": [
-				"bzzr://e5c0783b7345ace575559762d57581cd643daaacb5919a4ba6fbcdeba3632bdd"
+				"bzzr://eaaba1e732867c3a41fef3c329a6bf677a83b5044d7e26096df01cd7ea707d19"
 			]
 		}
 	},

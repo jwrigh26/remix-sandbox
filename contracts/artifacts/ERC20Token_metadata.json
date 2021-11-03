@@ -6,22 +6,41 @@
 	"output": {
 		"abi": [
 			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": false,
 				"inputs": [],
-				"name": "buyToken",
+				"name": "mint",
 				"outputs": [],
-				"payable": true,
-				"stateMutability": "payable",
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"constant": true,
-				"inputs": [],
-				"name": "token",
-				"outputs": [
+				"inputs": [
 					{
 						"name": "",
 						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"payable": false,
@@ -31,22 +50,13 @@
 			{
 				"inputs": [
 					{
-						"name": "_wallet",
-						"type": "address"
-					},
-					{
-						"name": "_token",
-						"type": "address"
+						"name": "_name",
+						"type": "string"
 					}
 				],
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
-			},
-			{
-				"payable": true,
-				"stateMutability": "payable",
-				"type": "fallback"
 			}
 		],
 		"devdoc": {
@@ -58,7 +68,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ERC20Token_ver1.sol": "MyContract"
+			"contracts/ERC20Token_ver1.sol": "ERC20Token"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
