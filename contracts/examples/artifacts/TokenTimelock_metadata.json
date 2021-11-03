@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Token",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_beneficiary",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_releaseTime",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "beneficiary",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "release",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "releaseTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract Token",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/examples/timelock.sol": "TokenTimelock"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/examples/Token.sol": {
+			"keccak256": "0x5097e48f4fd5cd43232736e0f9d3c1ebaea2c31f547e6cc17c60cf41ff1e9b05",
+			"urls": [
+				"bzz-raw://8ad479349c63108fb1210d4e7120882996f2a4692bc5659f781d0627760acd46",
+				"dweb:/ipfs/QmXApBcgNicD5kkjG5egbEj8g5qv8oekxnVkj1fV3gst6z"
+			]
+		},
+		"contracts/examples/timelock.sol": {
+			"keccak256": "0xf64f36b5c50188b29c07891f66e5fde8404709184e028f5e71f763ce69737450",
+			"urls": [
+				"bzz-raw://41eba8038772556f25805deae9abb73788f3112a988b88147feab5a4a5561f67",
+				"dweb:/ipfs/QmWrucZT5N4jWFCF62cWNQUY3YMbAzka8E9LojMMny5KMe"
+			]
+		}
+	},
+	"version": 1
+}
